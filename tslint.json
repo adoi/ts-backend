@@ -1,0 +1,37 @@
+{
+    "extends": [
+        "tslint:latest",
+        "tslint-config-prettier"
+    ],
+    "jsRules": {},
+    "rules": {
+        "array-type": [
+            true,
+            "array"
+        ],
+        "no-console": [
+            true,
+            "debug",
+            "error",
+            "info",
+            "log",
+            "time",
+            "timeEnd",
+            "trace"
+        ],
+        "only-arrow-functions": [
+            true,
+            "allow-declarations",
+            "allow-named-functions"
+        ],
+        "triple-equals": [
+            true,
+            "allow-null-check"
+        ],
+        "member-access": false,
+        "object-literal-sort-keys": false,
+        "ordered-imports": false,
+        "interface-name": false
+    },
+    "rulesDirectory": []
+}
