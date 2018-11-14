@@ -1,7 +1,32 @@
-# Awesome Project Build with TypeORM
-        
-Steps to run this project:
+# Typescript backend server with GraphQL and Apollo Server
 
-1. Run `npm i` command
-2. Setup database settings inside `ormconfig.json` file
-3. Run `npm start` command
+### This is a simple server that uses NodeJs with Typescript on the backend and GraphQL
+
+## Setup
+
+1. Install yarn globally 
+
+    1.1
+
+    ```
+    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+    
+    echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+    ````
+
+    1.2 
+    ```
+    sudo apt-get update && sudo apt-get install yarn
+    ```
+
+2. Get the dependencies
+    ```
+    yarn
+    ```
+
+3. Start the server 
+    ```
+    yarn start
+    ```
+
+Developed by [Adonis Murati](https://github.com/adoi)
