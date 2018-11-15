@@ -14,6 +14,17 @@ export const resolvers: IResolvers = {
                 password: hashedPass
             }).save();
             return true;
+        },
+        login: async (_, { email, password }) => {
+            const user = await User.findOne({ where: { email } });
+
+            if (!user) {
+                return null;
+            }
+
+            const validPass = await argon2.verify(user.password, password);
+
+            return validPass ? user : null;
         }
     }
 }
