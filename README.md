@@ -1,8 +1,8 @@
-# Typescript backend server with GraphQL and Apollo Server
+## Typescript backend server with GraphQL and Apollo Server
 
 This is a simple Apollo server that uses NodeJs with Typescript on the backend and GraphQL
 
-#### Setup (Debian based distros)
+#### Setup (Debian based distros):
 
 1. Install yarn globally 
 
@@ -18,15 +18,48 @@ This is a simple Apollo server that uses NodeJs with Typescript on the backend a
     ```
     sudo apt-get update && sudo apt-get install yarn
     ```
+2. Clone the repo
+    ```
+    git clone https://github.com/adoi/ts-backend
+    ```
 
-2. Get the dependencies
+3. Get the dependencies
     ```
     yarn
     ```
+    
+4. Upgrade to the latest versions
+    ```
+    yarn upgrade-interactive --latest
+    ```
+5. Create the db (Make sure you have PostgreSQL installed)
+    ```
+    createdb ts-backend-server
+    ```
+    *Note*: This is the name of the datase you set in the ormconfig.json file.
 
-3. Start the server 
+6. Start the server 
     ```
     yarn start
     ```
+---
+
+*Note*: You can test the resolvers on http://localhost:4000/graphql.
+
+Example: 
+ 
+    query {
+        initialMessage
+    }
+    
+Should return : 
+    
+    {
+        "data": {
+            "initialMessage": "From GraphQL"
+        }
+    }
+
+---
 
 Developed by [Adonis Murati](https://github.com/adoi)
