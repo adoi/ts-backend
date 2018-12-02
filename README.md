@@ -1,8 +1,8 @@
 # Typescript backend server with GraphQL and Apollo Server
 
-### This is a simple Apollo server that uses NodeJs with Typescript on the backend and GraphQL
+This is a simple Apollo server that uses NodeJs with Typescript on the backend and GraphQL
 
-## Setup (Debian based distros)
+#### Setup (Debian based distros)
 
 1. Install yarn globally 
 
